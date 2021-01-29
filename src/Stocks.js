@@ -14,16 +14,22 @@ export const Stocks = () => {
 		  return (
 		  
 		  <div>
-		<Card className="text-center shadow">
+		<Card className="text-left shadow">
 		
 		
 		  <Card.Header as ="h5">{data.title}</Card.Header>
 			
 		  <Card.Body>
 			<Card.Title></Card.Title>
-			<Card.Text>
-				{data.body}
-			</Card.Text>
+			
+			{data.body.map((line) => {
+				return (
+				<Card.Text>
+				{line}
+				</Card.Text>	
+				);
+			})}
+			
 			
 			{data.imgs.map((img) => {
 				return (
