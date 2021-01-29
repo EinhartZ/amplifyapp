@@ -1,4 +1,4 @@
-export const stockData = [
+export const featureData = [
   {	
 	date: "Release 29/01/2021",
 	title: "'What's new' window",

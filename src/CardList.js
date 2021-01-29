@@ -3,26 +3,26 @@ import "./App.css";
 
 import Card from 'react-bootstrap/Card';
 
-import{stockData} from './data/data';
+import{featureData} from './data/data';
 
-export const Stocks = () => {
+export const CardList = () => {
   return (
     <>
       
-	  {stockData.map((data, key) => {
+	  {featureData.map((feature, key) => {
 		  
 		  return (
 		  
-		  <div>
-		<Card className="text-left shadow">
+		<div class = "container">
+		<Card className = "shadow">
 		
 		
-		  <Card.Header as ="h5">{data.title}</Card.Header>
+		  <Card.Header bg="primary" as ="h5">{feature.title}</Card.Header>
 			
 		  <Card.Body>
 			<Card.Title></Card.Title>
 			
-			{data.body.map((line) => {
+			{feature.body.map((line) => {
 				return (
 				<Card.Text>
 				{line}
@@ -31,18 +31,18 @@ export const Stocks = () => {
 			})}
 			
 			
-			{data.imgs.map((img) => {
+			{feature.imgs.map((img) => {
 				return (
 				<Card.Img variant="top" src={process.env.PUBLIC_URL + img} />
 				);  
 		  })}
 			
 		  </Card.Body>
-		  <Card.Footer className="text-muted">{data.date}</Card.Footer>
+		  <Card.Footer className="text-muted">{feature.date}</Card.Footer>
 		</Card>
 		  
 		  <br/>
-		  </div>
+		</div>
 		  
 		  );
 		  

@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { Stocks } from "./Stocks";
+import { CardList } from "./CardList";
 
 function App() {
   return (
     <div className="App">
 	  
-	  <Stocks/>
+	  <CardList/>
 	  
     </div>
   );
