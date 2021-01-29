@@ -8,7 +8,7 @@ import{stockData} from './data/data';
 export const Stocks = () => {
   return (
     <>
-      <div className="stock-container">Welcome to Stock Tracker</div>
+      
 	  {stockData.map((data, key) => {
 		  
 		  return (
