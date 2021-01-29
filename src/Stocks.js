@@ -15,15 +15,24 @@ export const Stocks = () => {
 		  
 		  <div>
 		<Card className="text-center shadow">
-		  <Card.Header>Featured</Card.Header>
+		
+		
+		  <Card.Header as ="h5">{data.title}</Card.Header>
+			
 		  <Card.Body>
-			<Card.Title>{data.company}</Card.Title>
+			<Card.Title></Card.Title>
 			<Card.Text>
-				{data.stockPrice}
+				{data.body}
 			</Card.Text>
 			
+			{data.imgs.map((img) => {
+				return (
+				<Card.Img variant="top" src={process.env.PUBLIC_URL + img} />
+				);  
+		  })}
+			
 		  </Card.Body>
-		  <Card.Footer className="text-muted">{data.timeElapsed}</Card.Footer>
+		  <Card.Footer className="text-muted">{data.date}</Card.Footer>
 		</Card>
 		  
 		  <br/>

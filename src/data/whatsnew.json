@@ -1,0 +1,39 @@
+export const data = [
+	{
+		date: "Release 29/01/2021",
+		head: "",
+		body: "
+				<ul>
+					<li>'What's new' window</li>
+					In the menu of the user account a "What's new" button is added. Clicking on this button returns a brief overview of most important updates related to new software release.  
+					<img src= '/SERVED/HELP/WEB/29_01_2021/whatsnew.png' style='width: 100%'>
+
+					<li>Cloning an existing quality path</li>
+					Cloning a quality path is copying the latest version of the quality path (including all related answers, attachments, comments, etc.).
+                    Therefore, click on the 'Compliance' button to open all available quality paths and click on the clone button of the relevant quality path.
+                    The suggested quality path name can be modified. When confirming the action the cloning process is finished.  					
+					<img src= '/SERVED/HELP/WEB/29_01_2021/clone1.png' style='width: 100%'>
+					<img src= '/SERVED/HELP/WEB/29_01_2021/clone2.png' style='width: 100%'>
+					
+					<li>Shortcut to create improvements and tasks</li>
+					A shortcut to create improvements and tasks was added to the Compliance menu. 
+                    Clicking on the relevant quality path name visualizes the Compliance menu, including the new '+' button.
+                    Activating this '+' button opens the possibility to quickly add an improvement or a task.  					
+					<img src= '/SERVED/HELP/WEB/29_01_2021/add1.png' style='width: 100%'>
+					<img src= '/SERVED/HELP/WEB/29_01_2021/add2.png' style='width: 100%'>
+					
+					<li>Insert general configuration data from the account information</li>
+					A shortcut to automatically enter all the available account information was added. This function will save time when filling out all the configuration information necessary to generate reports.
+					<img src= '/SERVED/HELP/WEB/29_01_2021/copyaccount1.png' style='width: 100%'>
+					<img src= '/SERVED/HELP/WEB/29_01_2021/copyaccount2.png' style='width: 100%'>
+					
+					<li>Selection of audit participants</li>
+					Audit participants can be easily selected from the list of account users. Therefore, open the revision configuration module, select the 'Audit team' section and click on 'Add participant'. 
+					Now the identification data from the auditor participant can be filled out automatically after selecting the participant from the list of account users.
+					<img src= '/SERVED/HELP/WEB/29_01_2021/participant1.png' style='width: 100%'>
+					<img src= '/SERVED/HELP/WEB/29_01_2021/participant2.png' style='width: 100%'>
+				</ul>
+				",
+		type: "feature"
+	},
+]
